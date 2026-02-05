@@ -581,4 +581,6 @@ What should be implemented:
 
 No authentication. No M365.
 
+Note for redeploying
+
 END OF SPEC.
