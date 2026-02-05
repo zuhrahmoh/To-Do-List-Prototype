@@ -1,0 +1,33 @@
+{
+  "name": "To-do-App",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "node scripts/test-setup.mjs && vitest run"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.3",
+    "@prisma/client": "^7.3.0",
+    "@prisma/adapter-pg": "^7.3.0",
+    "nuxt": "^4.3.0",
+    "pinia": "^3.0.4",
+    "pg": "^8.16.3",
+    "vue": "^3.5.27",
+    "vue-router": "^4.6.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.23.0",
+    "@vue/test-utils": "^2.4.6",
+    "dotenv": "^17.2.3",
+    "happy-dom": "^20.4.0",
+    "playwright-core": "^1.58.0",
+    "prisma": "^7.3.0",
+    "vitest": "^3.2.4"
+  }
+}
