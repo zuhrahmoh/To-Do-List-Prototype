@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs",
+    "migrate:deploy": "prisma migrate deploy",
+    "postinstall": "prisma generate && nuxt prepare",
     "test": "node scripts/test-setup.mjs && vitest run"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "nuxt": "^4.3.0",
     "pinia": "^3.0.4",
     "pg": "^8.16.3",
+    "prisma": "^7.3.0",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4",
     "zod": "^4.3.6"
@@ -27,7 +30,6 @@
     "dotenv": "^17.2.3",
     "happy-dom": "^20.4.0",
     "playwright-core": "^1.58.0",
-    "prisma": "^7.3.0",
     "vitest": "^3.2.4"
   }
 }
